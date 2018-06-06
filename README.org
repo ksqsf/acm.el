@@ -1,0 +1,21 @@
+* acm.el
+
+acm.el (or, ~acm-mode~) provides a minor mode to assist in competitive
+programming, by saving you from tedious tasks like
++ building the program
++ feeding input
++ getting output
++ measuring running time (todo)
++ comparing your results with correct results (todo)
+
+Yes, these tasks are trivial, but it can be really annoying.
+
+*NOTE:* this is in early development, and your improvements are
+welcome.  Since I'm an Emacs Lisp beginner, you are encouraged to
+review my code and make it better.
+
+** Installation
+
+Since this package is not yet ready for public use, there's no better
+way but ~load~.
+
