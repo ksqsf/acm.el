@@ -19,3 +19,43 @@ review my code and make it better.
 Since this package is not yet ready for public use, there's no better
 way but ~load~.
 
+** Usage
+
+Do ~M-x acm-mode~ in the buffer of the source file when needed.  A
+special window configuration will be created, where your source file
+is placed on the left, and the input and the output buffers are placed
+on the right.
+
+If your source file name is ~FILE.cpp~, then ~acm-mode~ will look for
+~FILE.in~, and automatically fill in the input buffer with the
+contents of that file.  But the input buffer is still not associated
+with that file.
+
+Commands provided by ~acm.el~ also work in the input and the output
+buffers, but they do NOT work outside these three buffers.
+
+*** Jumping among buffers
+
++ ~acm-source~ :: Jump to the source buffer.
++ ~acm-input~ :: Jump to the input buffer.
++ ~acm-output~ :: Jump to the output buffer.
+
+*** Compile and test
+
++ ~acm-compile~ :: Compile the source file, using sane default
+                   ~-std=c++14 -ggdb~, generating an execuatble named
+                   ~FILE~ (given your source file is named
+                   ~FILE.cpp~).
++ ~acm-run~ :: Run the previously built executable.
+
+*** Key bindings
+
+The default key bindings are kept as intuitive as possible.
+
+| Commands      | Keys    |
+|---------------+---------|
+| ~acm-source~  | ~C-c s~ |
+| ~acm-input~   | ~C-c i~ |
+| ~acm-output~  | ~C-c o~ |
+| ~acm-compile~ | ~C-c c~ |
+| ~acm-run~     | ~C-c r~ |
