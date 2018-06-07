@@ -48,14 +48,19 @@ buffers, but they do NOT work outside these three buffers.
                    ~FILE.cpp~).
 + ~acm-run~ :: Run the previously built executable.
 
+*** Window configuration
+
++ ~acm-restore-window-configuration~ :: Restore the default window configuration.
+
 *** Key bindings
 
 The default key bindings are kept as intuitive as possible.
 
-| Commands      | Keys    |
-|---------------+---------|
-| ~acm-source~  | ~C-c s~ |
-| ~acm-input~   | ~C-c i~ |
-| ~acm-output~  | ~C-c o~ |
-| ~acm-compile~ | ~C-c c~ |
-| ~acm-run~     | ~C-c r~ |
+| Keys    | Commands                           |
+|---------+------------------------------------|
+| ~C-c s~ | ~acm-source~                       |
+| ~C-c i~ | ~acm-input~                        |
+| ~C-c o~ | ~acm-output~                       |
+| ~C-c c~ | ~acm-compile~                      |
+| ~C-c r~ | ~acm-run~                          |
+| ~C-c w~ | ~acm-restore-window-configuration~ |
